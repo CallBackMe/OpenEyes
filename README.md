@@ -1,2 +1,2 @@
 # OpenEyes
-this is an android project coding by kotlin. 
+This is an android project coding by kotlin. 
