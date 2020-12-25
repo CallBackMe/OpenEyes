@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">大罗洞观</string>
+    <string name="action_settings">设置</string>
+    <string name="first_fragment_label">第一页</string>
+    <string name="second_fragment_label">第二页</string>
+    <string name="next">下一个</string>
+    <string name="previous">上一个</string>
+    <string name="hello_first_fragment">你好 第一页</string>
+    <string name="hello_second_fragment">你好 第二页. Arg: %1$s</string>
+</resources>

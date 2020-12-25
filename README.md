@@ -1,2 +1,3 @@
-# OpenEyes
-This is an android project coding by kotlin. 
+# 大罗洞观 
+
+这个项目是我自己学习kotlin写的项目，希望能和大家一起学习成长 !
