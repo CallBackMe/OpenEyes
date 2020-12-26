@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -17,10 +18,34 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        debug {
+            // No debug config
+        }
+        release {
+            storeFile file("../constant.jks")
+            storePassword "con20200705"
+            keyAlias "constant"
+            keyPassword "con20200705"
+        }
+    }
+
     buildTypes {
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // 是否显示Log
+            buildConfigField "boolean", "SHOW_LOG", "true"
+            signingConfig signingConfigs.release
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // 是否显示Log
+            buildConfigField "boolean", "SHOW_LOG", "true"
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {
@@ -44,4 +69,6 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
 }
