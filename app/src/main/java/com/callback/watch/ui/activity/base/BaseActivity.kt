@@ -10,12 +10,14 @@ import com.gyf.immersionbar.ImmersionBar
 open class BaseActivity : AppCompatActivity() {
 
     companion object {
-        public const val TAG = "ocean"
+        public const val TAG_CLASS = "ocean"
     }
+
+    protected val TAG: String = this.javaClass.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        logE(TAG, " +++++++++++++++++++ current Class name = ${this.javaClass.simpleName}")
+        logE(TAG_CLASS, " +++++++++++++++++++ Open Eyes Class name = ${this.javaClass.simpleName}")
         setStatusBarBackground(R.color.colorPrimaryDark)
 
     }

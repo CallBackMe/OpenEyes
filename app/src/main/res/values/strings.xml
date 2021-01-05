@@ -7,4 +7,10 @@
     <string name="previous">上一个</string>
     <string name="hello_first_fragment">你好 第一页</string>
     <string name="hello_second_fragment">你好 第二页. Arg: %1$s</string>
+
+    <string name="homepage">首页</string>
+    <string name="community">社区</string>
+    <string name="notification">通知</string>
+    <string name="mine">我的</string>
+
 </resources>

@@ -12,7 +12,8 @@ class WatchApplication : Application() {
     }
 
     init {
-        logE(TAG,"  +++++++++++++++++  WatchApplication  init ----- ")
+        var name = "jianzong"
+        logE(TAG,"  +++++++++++++++++  WatchApplication  init ----- {$name} ")
     }
 
     override fun onCreate() {

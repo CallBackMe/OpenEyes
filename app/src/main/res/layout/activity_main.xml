@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -11,18 +12,11 @@
         android:layout_weight="1"
         android:background="@color/white" />
 
-    <TextView
-        android:id="@+id/tvName"
-        android:layout_width="match_parent"
-        android:text="你好"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:layout_height="80dp" />
-
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:background="@color/grayDark" />
+
+    <include layout="@layout/layout_bottom_navigation_bar" />
 
 </LinearLayout>
