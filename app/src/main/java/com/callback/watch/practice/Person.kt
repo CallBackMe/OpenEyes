@@ -1,6 +1,6 @@
 package com.callback.watch.practice
 
-import com.callback.watch.extension.logE
+import com.callback.watch.common.util.logE
 
 open class Person {
 

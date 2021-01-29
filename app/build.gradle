@@ -1,4 +1,5 @@
 plugins {
+    //应用主入口标示
     id 'com.android.application'
     //Kotlin Android扩展插件
     id 'kotlin-android'
@@ -86,8 +87,13 @@ dependencies {
     //沉浸式状态栏和沉浸式导航栏管理
     implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
 
-    //Jetpack -- Room数据库
+    //Jetpack -- Room数据库组件
     implementation 'androidx.room:room-runtime:2.2.5'
     kapt 'androidx.room:room-compiler:2.2.5'
+
+    //Jetpack -- lifecycle生命周期感知型组件
+    //这样，组件便能够在其内部管理自己的生命周期，从而降低模块间的耦合度，并降低内存泄漏发生的可能性
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
 
 }

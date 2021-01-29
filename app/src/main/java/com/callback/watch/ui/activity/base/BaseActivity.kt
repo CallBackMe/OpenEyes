@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.annotation.ColorRes
 import androidx.appcompat.app.AppCompatActivity
 import com.callback.watch.R
-import com.callback.watch.extension.logE
+import com.callback.watch.common.util.logE
 import com.gyf.immersionbar.ImmersionBar
 
 open class BaseActivity : AppCompatActivity() {

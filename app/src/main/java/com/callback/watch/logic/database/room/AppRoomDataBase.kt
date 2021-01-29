@@ -1,11 +1,10 @@
 package com.callback.watch.logic.database.room
 
-import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.callback.watch.WatchApplication
-import com.callback.watch.extension.logE
+import com.callback.watch.common.util.logE
 import com.callback.watch.logic.file.FileManager
 
 @Database(

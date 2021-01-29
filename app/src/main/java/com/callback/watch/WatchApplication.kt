@@ -2,7 +2,7 @@ package com.callback.watch
 
 import android.app.Application
 import android.content.Context
-import com.callback.watch.extension.logE
+import com.callback.watch.common.util.logE
 
 class WatchApplication : Application() {
 

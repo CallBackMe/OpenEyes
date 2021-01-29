@@ -1,6 +1,6 @@
 package com.callback.watch.practice
 
-import com.callback.watch.extension.logE
+import com.callback.watch.common.util.logE
 
 //函数的可见性修饰符：public 所有类可见（默认）；private	当前类可见；
 //protected  当前类、子类可见；internal  同一模块中的类可见

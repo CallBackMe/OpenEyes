@@ -4,7 +4,7 @@ import android.text.TextUtils
 import kotlin.math.max
 import kotlin.properties.Delegates
 
-class Practice {
+open class Practice {
 
     //lazy 只能用在val类型 修饰不可变的常量，
     //lateinit 只能用在var类型 修饰变量

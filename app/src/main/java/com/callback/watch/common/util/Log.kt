@@ -1,4 +1,4 @@
-package com.callback.watch.extension
+package com.callback.watch.common.util
 
 import android.util.Log
 import com.callback.watch.BuildConfig
@@ -41,5 +41,21 @@ fun logW(tag: String, message: String?) {
 fun logE(tag: String, message: String?) {
     if (level <= ERROR && BuildConfig.SHOW_LOG) {
         Log.e(tag, message.toString())
+    }
+}
+
+fun logW(tag: String, msg: String?, tr: Throwable? = null) {
+    if (level <= WARN) {
+        if (tr == null) {
+            Log.w(tag, msg.toString())
+        } else {
+            Log.w(tag, msg.toString(), tr)
+        }
+    }
+}
+
+fun logE(tag: String, msg: String?, tr: Throwable) {
+    if (level <= ERROR) {
+        Log.e(tag, msg.toString(), tr)
     }
 }
